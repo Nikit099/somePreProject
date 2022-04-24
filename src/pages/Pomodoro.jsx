@@ -5,7 +5,7 @@ import '../styles.css';
 
 
 function Pomodoro() {
-  const [countMin, setCountMin] = useState(99)
+  const [countMin, setCountMin] = useState(25)
   const [Breack, setBreack] = useState(1)
   const [countSec, setcountSec] = useState(0)
   const [session, setSession] = useState(1)
@@ -29,7 +29,6 @@ function Pomodoro() {
   }
  useEffect(() => {
   getBackColor()
-  console.log(getBackColor());
  }, [backColor])
 
 

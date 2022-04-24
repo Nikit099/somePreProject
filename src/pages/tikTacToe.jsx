@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const TikTacToe = () => {
 
 const [cell, setCell] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9])
 const [flag, setFlag] = useState(false)
-
+const [modul, setModul] = useState(true)
 
 
 const sizesCell = {
@@ -23,6 +23,9 @@ const sizesCell = {
         flexWrap: 'wrap'
     }
 }
+useEffect(() => {
+
+}, [])
 
 const handleClick = e =>{
     const block = e.target.closest('.block')
@@ -35,7 +38,7 @@ const handleClick = e =>{
 }
 
     return (
-        <div>
+        <div  >
           
             <div className='board' style={sizesCell.sizesBoard}  onClick={e => handleClick(e)}>
                 {cell.map((i) => (
@@ -45,9 +48,13 @@ const handleClick = e =>{
                 ))}
             </div>
             <h2 className='chooseWindow'>
-            <div className="form-check form-switch">
-                <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked={flag} onChange={(e)=> setFlag(e.target.checked)} />
-            <label className="form-check-label" for="flexSwitchCheckChecked">PICK PLAYER 1`S MARK</label>
+            <div className={"form-check form-switch "  + (modul && 'tikTakWindow') }>
+                <div className={modul && "formTik"}>
+            <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked={flag} onChange={(e)=> setFlag(e.target.checked)} />
+            <label className="form-check-label">PICK PLAYER 1`S MARK</label>
+            <button type="button" class="btn btn-danger" style={{position: 'relative',left: '-200px', bottom: '-60px'}} >OK</button>
+                </div>
+               
             </div>
             </h2>
          

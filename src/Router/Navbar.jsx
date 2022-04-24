@@ -13,16 +13,19 @@ function Navbar() {
 
         
         <li className="nav-item">
-          <a className="nav-link" href="#"><Link className='Link' to='/Password' >Password</Link></a>
+          <Link className='nav-link active Link' to='/Password' >Password</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#"><Link className='Link' to='/Pomodoro' >Pomodoro</Link></a>
+         <Link className='nav-link active Link' to='/Pomodoro' >Pomodoro</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">  <Link className='Link ' to='/KeyBoardTest' >KeyBoardTest</Link></a>
+            <Link className='nav-link active Link ' to='/KeyBoardTest' >KeyBoardTest</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">  <Link className='Link ' to='/ticTacToe' >TicTacToe</Link></a>
+         <Link className='nav-link active Link ' to='/ticTacToe' >TicTacToe</Link>
+        </li>
+        <li className="nav-item">
+           <Link className="nav-link active Link" to='/weather' >Weather</Link>
         </li>
       </ul>
     </div>
