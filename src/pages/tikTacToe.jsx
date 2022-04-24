@@ -4,7 +4,7 @@ const TikTacToe = () => {
 
 const [cell, setCell] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9])
 const [flag, setFlag] = useState(false)
-const [modul, setModul] = useState(true)
+const [modul, setModul] = useState(false)
 
 
 const sizesCell = {
@@ -31,7 +31,7 @@ const handleClick = e =>{
     const block = e.target.closest('.block')
     if(block){
         if( block.innerHTML === '') {
-          flag ? e.target.innerHTML = '<img src="./img/close.png" alt="Close" />' :  e.target.innerHTML = '<img src="./img/zero.png" alt="Close" />';
+          flag ? e.target.innerHTML = `<img src=${require("../img/close.png")} alt="Close" />` :  e.target.innerHTML = `<img src=${require("../img/zero.png")} alt="Zero" />`;
           setFlag(!flag)
         } 
     }
