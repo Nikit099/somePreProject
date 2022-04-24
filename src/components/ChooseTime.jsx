@@ -69,9 +69,9 @@ const ChooseTime = ({ color, countMin, Breack, setCountMin, setBreack, modalWind
 
   </div>
   
-        <img onClick={upClickMin} className="UpLeft" src="./img/upload.png" alt="up.img" style={{width: '22px', height: '24px'}}  />  <img  onClick={upClickSec} className="UpRight" src="./img/upload.png" alt="" style={{width: '22px', height: '24px'}} /> 
+        <img onClick={upClickMin} className="UpLeft" src={require("../img/upload.png")} alt="up.img" style={{width: '22px', height: '24px'}}  />  <img  onClick={upClickSec} className="UpRight" src={require("../img/upload.png")} alt="" style={{width: '22px', height: '24px'}} /> 
        
-       <img onClick={downClickMin}  className="DownLeft" src="./img/upload.png" style={{width: '22px', height: '24px', transform: "rotate(180deg)" }} alt="down.img" />  <img onClick={downClickSec} className="DownRight" src="./img/upload.png" alt="" style={{width: '22px', height: '24px', transform: "rotate(180deg)"}} /> 
+       <img onClick={downClickMin}  className="DownLeft" src={require("../img/upload.png")} style={{width: '22px', height: '24px', transform: "rotate(180deg)" }} alt="down.img" />  <img onClick={downClickSec} className="DownRight" src={require("../img/upload.png")} alt="" style={{width: '22px', height: '24px', transform: "rotate(180deg)"}} /> 
      
 
       <div className='threeBlock' >

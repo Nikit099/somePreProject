@@ -3,7 +3,6 @@ import ChooseTime from "../components/ChooseTime";
 import '../styles.css';
 
 
-
 function Pomodoro() {
   const [countMin, setCountMin] = useState(25)
   const [Breack, setBreack] = useState(1)
@@ -103,7 +102,7 @@ function Pomodoro() {
   </div>
 
 
-<img src="./img/cogwheel.png" alt=""  className="cogwheel" onClick={() => setModalWindow(!modalWindow)}  />
+<img src={require("../img/cogwheel.png")} alt=""  className="cogwheel" onClick={() => setModalWindow(!modalWindow)}  />
 
 <ChooseTime   Breack = {Breack} countMin={countMin} backColor= {backColor} setBackColor={setBackColor} color={color} setColor={setColor} modalWindow ={modalWindow} setCountMin={setCountMin} setBreack={setBreack} setModalWindow={setModalWindow} />
  
