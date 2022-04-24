@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/somePreProject/static/css/main.3bec3e34.css",
-    "main.js": "/somePreProject/static/js/main.5952254e.js",
+    "main.js": "/somePreProject/static/js/main.874d00b0.js",
+    "static/media/cogwheel.png": "/somePreProject/static/media/cogwheel.36fbd6ee8f1a24967d54.png",
     "index.html": "/somePreProject/index.html",
     "main.3bec3e34.css.map": "/somePreProject/static/css/main.3bec3e34.css.map",
-    "main.5952254e.js.map": "/somePreProject/static/js/main.5952254e.js.map"
+    "main.874d00b0.js.map": "/somePreProject/static/js/main.874d00b0.js.map"
   },
   "entrypoints": [
     "static/css/main.3bec3e34.css",
-    "static/js/main.5952254e.js"
+    "static/js/main.874d00b0.js"
   ]
 }
